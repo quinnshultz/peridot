@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_password_account"
+            android:icon="@drawable/ic_menu_password_account"
+            android:title="@string/nav_menu_password_account" />
+        <item
+            android:id="@+id/nav_generate_password"
+            android:icon="@drawable/ic_menu_generate_password"
+            android:title="@string/nav_menu_generate_password" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/action_settings" />
+    </group>
+
+</menu>

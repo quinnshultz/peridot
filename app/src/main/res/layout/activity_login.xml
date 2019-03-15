@@ -26,10 +26,25 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/email_login_form"
+            android:id="@+id/server_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_server_url"
+                    android:inputType="textAutoComplete"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -65,13 +80,38 @@
             </android.support.design.widget.TextInputLayout>
 
             <Button
-                android:id="@+id/email_sign_in_button"
+                android:id="@+id/server_sign_in_button"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/action_sign_in"
                 android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/button_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/server_register_button"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/action_register"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/use_offline_button"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/action_use_offline"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
